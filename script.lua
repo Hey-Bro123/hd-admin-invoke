@@ -13,5 +13,5 @@ elseif replicated:FindFirstChild("HDAdminHDClient") then
 elseif replicated:FindFirstChild("HD Admin") then
 	local remote = replicated["HD Admin"].Core.MainModule.Value.Remotes.SendMessage
 
-	return {remote:InvokeServer(cmd,"ClientCommandBar")}[1]
+	return ( {remote:InvokeServer(cmd,"ClientCommandBar")} ) [1]
 end
